@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/plusTwoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11/12 Programs"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Science Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/outline_card"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/scienceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Management"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1565C0"
+                android:layout_marginBottom="8dp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="12dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@drawable/science1"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="4dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/science2" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/scienceContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Explore the wonders of the universe! Our Science programs in Physics, Chemistry, and Biology equip you with knowledge and hands-on experience to solve real-world problems and spark innovation."
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/scienceApplyBtn"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Study(Apply now)"
+                android:backgroundTint="#FF0000"
+                   android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Management Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/outline_card"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/managementTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Management"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1565C0"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/managementContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This section includes courses like Business Studies, Hotel Management, etc."
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/managementApplyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply Now"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Education Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/outline_card"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/educationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1565C0"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/educationContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This section includes courses like B.Ed., M.Ed., etc."
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/educationApplyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply Now"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Humanities Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/outline_card"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/humanitiesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humanities"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1565C0"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/humanitiesContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/humanitiesApplyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply Now"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

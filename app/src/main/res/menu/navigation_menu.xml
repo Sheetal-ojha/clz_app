@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_filled_24" />
+    <item
+        android:id="@+id/nav_student"
+        android:title="Student Portal"
+        android:icon="@drawable/baseline_face_24" />
+    <item
+        android:id="@+id/nav_result"
+        android:title="Results"
+        android:icon="@drawable/baseline_result_24" />
+    <item
+        android:id="@+id/nav_events"
+        android:title="Events"
+        android:icon="@drawable/baseline_event1_month_24" />
+    <item
+        android:id="@+id/nav_about"
+        android:title="About Us"
+        android:icon="@drawable/baseline_article_24" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/baseline_logout_24" />
+
+    <item
+        android:id="@+id/nav_login"
+        android:title="Login"
+        android:icon="@drawable/baseline_login_24" />
+
+</menu>

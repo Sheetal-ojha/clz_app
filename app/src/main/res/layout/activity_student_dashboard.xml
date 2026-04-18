@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Profile Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_person"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background1"
+                android:padding="10dp"
+                android:clipToOutline="true"
+                android:outlineProvider="background" />
+
+
+            <TextView
+                android:id="@+id/tvName"
+                android:text="Student Name"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="email@gmail.com"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:padding="16dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/tvStudentId"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="ID:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Phone:"
+                android:textSize="16sp"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/tvClass"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Class:"
+                android:textSize="16sp"
+                android:layout_marginTop="6dp" />
+
+            <!-- Result / Exam / Event Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="3">
+
+                <!-- Result Box -->
+                <LinearLayout
+                    android:id="@+id/resultBox"
+                    android:layout_width="0dp"
+                    android:layout_height="85dp"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/box_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:onClick="openResult">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/baseline_result_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RESULT"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <!-- Exam Box -->
+                <LinearLayout
+                    android:id="@+id/examBox"
+                    android:layout_width="0dp"
+                    android:layout_height="85dp"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/box_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:onClick="openExam">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/baseline_exam_note_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXAM"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <!-- Event Box -->
+                <LinearLayout
+                    android:id="@+id/eventBox"
+                    android:layout_width="0dp"
+                    android:layout_height="85dp"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/box_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:onClick="openEvent">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/baseline_event1_month_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EVENT"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/outer_black_border"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <!-- Dashboard content -->
+
+                </LinearLayout>
+
+                <!-- LMS / Notes Card -->
+                <LinearLayout
+                    android:id="@+id/lmsCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/outer_black_border"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LMS / Notes"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/baseline_event1_month_24" />
+                </LinearLayout>
+
+                <!-- Homework Card -->
+                <LinearLayout
+                    android:id="@+id/homeworkCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/outer_black_border"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Homework"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- Fees Card -->
+                <LinearLayout
+                    android:id="@+id/feesCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/outer_black_border"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fees"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

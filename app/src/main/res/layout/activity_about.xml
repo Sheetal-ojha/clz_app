@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Kathmandu Shikcha Campus "
+            android:textColor="@color/black"/>
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/aboutFullTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Established in 1991 A.D., Kathmandu Shiksha Campus (KSC) is a pioneering institution in community-based higher education in Nepal. With over 33 years of academic excellence, it is proudly recognized by the University Grants Commission (UGC), Nepal, as a QAA-accredited campus.
+
+\n\nRenowned for its strong commitment to quality teaching, learning, and research, the campus delivers high-standard education at an affordable cost, making it accessible to students from diverse backgrounds. Over the decades, KSC has developed its own well-equipped infrastructure, featuring smart classrooms, extensive playgrounds, a resource-rich library, and various modern learning facilities.
+
+Backed by a team of experienced and dedicated faculty, the campus fosters a vibrant academic environment that promotes intellectual growth and innovation.
+\n\n"
+   android:textColor="@color/black"
+        android:textSize="16dp"/>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="210dp"
+                    android:layout_height="210dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/class11c"/>
+
+                <ImageView
+                    android:layout_width="210dp"
+                    android:layout_height="210dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ksc4"/>
+
+                <ImageView
+                    android:layout_width="210dp"
+                    android:layout_height="210dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/class11e"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+
+        <TextView
+            android:id="@+id/aboutFullTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Students are provided with outstanding placement opportunities, practical exposure through outreach activities, and a value-based education that nurtures both personal and professional development.
+
+KSC stands as a model of holistic education, empowering students to excel not only academically but also as responsible, ethical, and capable members of society."
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chairman"
+            android:text="Message From Chairman"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textColor="#161F90"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/pro"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#1B47BF"
+            android:textSize="18dp"
+            android:text="Prof.Dr.Madhav Battrai"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="KSMC is a student-centered learning community campus dedicated to educating tomorrows leaders through innovative academic and co-curricular programs. The Campus prepares professional educators who excel academically, are reflective in practice, and are committed to the intellectual empowerment of every learner in our increasingly diverse public and private school environments. Accomplishments of the Campus include the preparation of school psychologists, the preparation of social work professionals through its nationally accredited programs, the preparation of students for success in nationwide graduate programs in psychology and sociology, the direct engagement with the community through its programs in community health services and the preparation of students to pursue social studies and careers in public service and administration.\n\n
+
+Our vision is based on hard work, open communication, a strong emphasis on team work and a high level of responsibility. This visionary culture allows and emphasizes our wards not only to adopt the present day challenges but also individual responsibilities to the society and our nation at large.\n\n
+
+Learning should be based on doing things and not merely knowing things. Until and unless learning solutions relate to real life and motivate the learner to acquire and apply the knowledge, the whole process will remain superficial. Any institution worth its name looks to optimize the productivity of global leaders. Our institution has set specific objectives and planned activities for achieving excellence in all spheres of general and technical as well as the vocational education.\n\n
+
+We are committed to ensuring that you have opportunities to succeed in your academic, extracurricular, social, and civic endeavors. As a student in the Campus, you will have opportunities to travel nationally, participate in meaningful service-learning programs, and develop effective leadership and critical-thinking skills. Our goal is to exceed your expectations. Please don’t hesitate to contact me or any member of our faculty or staff if you have questions or need assistance. Welcome to our Campus family.
+
+\n\nNamaskar!"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chief"
+            android:text="Message From Campus Chief"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textColor="#161F90"
+            android:textStyle="bold"/>
+
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/pri"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#1B47BF"
+            android:textSize="18dp"
+            android:text="Mr.Shatrughan Prasad Gupta"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Dear Students and Parents. Welcome to KSMC! We are committed to lead the Campus for excellence in teaching, excellence in research, and excellence in service focusing on Information Technology.
+
+\n\nDiscover Academic Excellence
+\n\nWelcome to KSC! We are committed to lead the Campus for excellence in teaching, excellence in research, and excellence in service. Our faculty embrace this commitment because of their desire to serve our students and our world through learning and inquiry. This philosophy of service and inquiry drives all that we do, and we invite you to learn more about these opportunities.
+
+\n\nGraduation in Education opens unlimited opportunities to identify a job, start a leadership for change in educational norms, values and cultures as we are in the state of change.
+
+\n\nThe purpose of KSC is to prepare professional educators who are academically and technically proficient, reflective in practice, committed to intellectual empowerment of others and guided by the federal democratic inclusive education system of Nepal. The involvement and commitment with which the students and faculty have worked over two decades have paid rich dividends and this has made KSC the most preferred one among the pioneering community educational institutions in the Nepal.
+
+\n\nBeing a first community education Campus affiliated to TU, KSC is excellence in academic performances and have very good friendly environment enjoying its culture of participating decision making to impart quality education at affordable fees. We hope our new building with additional facilities help us to change the KSC into multiple Campus with additional of technical and vocational education in the community.
+
+\n\nOur KSC students have been consistently securing good ranks in the TU Examinations, which has reflected in the placement records as well. KSC is particularly conscious to produce responsible citizens by inculcating discipline and determination. The pride of KSC is its Alumnus who are well placed in different spheres from civil services to globally acclaimed companies. Our journey moves with the intention of maintaining the â€˜legacyâ€™ with proud goals.
+
+\n\nKSC currently offers Six Masters degree programs in education. We have what you are looking for; browse through our website. Get a feel for the outstanding academic opportunities our Campus provides through our five departments, our graduate school, our research, our academic departments, KSC Library, and major scholarships. If we can assist you in achieving your academic goals, I hope you will contact us, enroll and complete your degree at KSC.
+
+
+
+\n\nSincerely,
+
+\n\nShatrughan Prasad Gupta, M.Phil
+
+\n\nCampus Chief
+
+\n\nKathmandu Shiksha Campus
+
+\n\nyespgupta@gmail.com
+
+\n\n01-4311843 /01-5916060"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+</ScrollView>

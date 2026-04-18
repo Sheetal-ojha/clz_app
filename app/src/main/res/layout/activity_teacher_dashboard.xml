@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Bigger gap from top -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Attendance -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:elevation="6dp"
+                android:radius="12dp">
+
+                <TextView
+                    android:id="@+id/cardAttendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Attendance"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#333" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Upload Result -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:elevation="6dp"
+                android:radius="12dp">
+
+                <TextView
+                    android:id="@+id/cardResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Upload Result"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#333" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Upload Assignment -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:elevation="6dp"
+                android:radius="12dp">
+
+                <TextView
+                    android:id="@+id/cardAssignment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Upload Assignment"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#333" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Routine -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:elevation="6dp"
+                android:radius="12dp">
+
+                <TextView
+                    android:id="@+id/cardRoutine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Routine"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#333" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Row 3 (Schedule alone for clean look) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:elevation="6dp"
+                android:radius="12dp">
+
+                <TextView
+                    android:id="@+id/cardSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Schedule"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#333" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Empty space for symmetry -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

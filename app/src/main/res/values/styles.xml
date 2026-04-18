@@ -1,0 +1,9 @@
+<resources>
+    <!-- App theme without action bar -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Set status bar to white -->
+        <item name="android:statusBarColor">@android:color/white</item>
+        <!-- Use dark icons (so they are visible on white) -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

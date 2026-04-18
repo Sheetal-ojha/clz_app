@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main content -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <!-- Old content -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:padding="0dp">
+
+            <!-- Header -->
+            <!-- New Modern Header -->
+            <LinearLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:background="#F5F5F5">
+
+                <ImageView
+                    android:id="@+id/headerLogo"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/clz_logo"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/headerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kathmandu Shiksha Campus"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="12dp"/>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDEDED"
+                android:contentDescription="Main Navigation Menu"
+                app:tabIndicatorColor="#1565C0"
+                app:tabIndicatorHeight="3dp"
+                app:tabTextColor="#555"
+                app:tabSelectedTextColor="#1565C0"
+                app:tabMode="scrollable"/>
+
+
+
+
+
+
+
+            <!-- Middle content -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <!-- Toolbar -->
+
+
+
+
+                    <TextView
+                        android:id="@+id/aboutDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:padding="8dp"/>
+
+                    <Button
+                        android:id="@+id/readMoreBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Read More"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#1565C0"
+                        android:drawableEnd="@drawable/baseline_arrow_right_alt_24"
+                        android:drawablePadding="6dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="4dp"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp" />
+
+                    <!-- Image Flipper -->
+                    <ViewFlipper
+                        android:id="@+id/imageFlipper"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:autoStart="true"
+                        android:flipInterval="3000"
+                        android:layout_margin="8dp">
+
+                        <ImageView
+                            android:id="@+id/photo1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/kac2"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="College Photo 1" />
+
+                        <ImageView
+                            android:id="@+id/photo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ksc1"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="College Photo 2" />
+
+                        <ImageView
+                            android:id="@+id/photo3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ksc5"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="College Photo 3" />
+                        <ImageView
+                            android:id="@+id/photo4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ksc3"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="College Photo 4" />
+
+                        <ImageView
+                            android:id="@+id/photo5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ksc4"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="College Photo 5" />
+
+                    </ViewFlipper>
+
+
+
+                    <!-- Courses / Programs Section -->
+                    <TextView
+                        android:id="@+id/coursesTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Our Faculty "
+                        android:layout_gravity="center"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#1565C0"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="12dp" />
+                    <!-- Faculty Row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="8dp"
+                        android:layout_marginBottom="16dp">
+
+                        <!-- Teacher 1 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="6dp"
+                            android:orientation="vertical"
+                            android:padding="12dp"
+                            android:background="@drawable/card_border_blue">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/pri"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Satru Gan Gupta"
+                                android:textStyle="bold"
+                                android:textColor="#1565C0"
+                                android:layout_marginTop="8dp"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Lecturer – MBA Economic"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Subject: Master in Business "
+                                android:textColor="@color/black"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Degree: MSc Computer Science/br PHD in public science"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"/>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Email: saturuganprasadgupta@gmail.com"
+                                android:textColorLink="@color/black"
+                                android:textSize="12sp"
+                                android:textColor="#1565C0"/>
+                        </LinearLayout>
+
+
+                        <!-- Teacher 2 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="6dp"
+                            android:orientation="vertical"
+                            android:padding="12dp"
+                            android:background="@drawable/card_border_blue">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/pro"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"/>
+
+                            <TextView
+                                android:text="Mr.Shatrughan Prasad Gupta"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textStyle="bold"
+                                android:textColor="#1565C0"
+                                android:layout_marginTop="8dp"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Lecturer – MED"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Subject: Business Studies"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Degree: MBA Finance"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Email: Yespgupta@gmail.com"
+                                android:textSize="12sp"
+                                android:textColor="#1565C0"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="8dp"
+                            android:layout_marginBottom="16dp">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="6dp"
+                            android:orientation="vertical"
+                            android:padding="12dp"
+                            android:background="@drawable/card_border_blue">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/pri"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="satrugan prasad gupta"
+                                android:textStyle="bold"
+                                android:textColor="#1565C0"
+                                android:layout_marginTop="8dp"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Lecturer – Computer Dept"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Subject: Data Structures"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Degree: MSc Computer Science"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Email: john@college.edu"
+                                android:textSize="12sp"
+                                android:textColor="#1565C0"/>
+                        </LinearLayout>
+
+
+                        <!-- Teacher 2 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="6dp"
+                            android:orientation="vertical"
+                            android:padding="12dp"
+                            android:background="@drawable/card_border_blue">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/pro"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"/>
+
+                            <TextView
+                                android:text="Dr.prasad karki"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textStyle="bold"
+                                android:textColor="#1565C0"
+                                android:layout_marginTop="8dp"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Lecturer – Management"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Subject: Business Studies"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Degree: MBA Finance"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Email: Yespal@gmail.com"
+                                android:textSize="12sp"
+                                android:textColor="#1565C0"/>
+                        </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                    <TextView
+                        android:id="@+id/coursestopic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="our course"
+                        android:layout_gravity="center"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#1565C0"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- +2 Card -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/plusTwoCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@android:color/transparent">
+
+                        <!-- Use a LinearLayout as the inner container with the border -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="16dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/card_border_blue">
+
+                            <!-- Image Flipper -->
+                            <ViewFlipper
+                                android:id="@+id/plusTwoFlipper"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:autoStart="true"
+                                android:flipInterval="2000"
+                                android:inAnimation="@android:anim/fade_in"
+                                android:outAnimation="@android:anim/fade_out">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/class1111"
+                                    android:scaleType="centerCrop"/>
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/class11c"
+                                    android:scaleType="centerCrop"/>
+                            </ViewFlipper>
+
+                            <!-- Text -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="+2 Programs"
+                                android:textSize="16sp"
+                                android:textColor="#1565C0"
+                                android:textStyle="bold"
+                                android:paddingStart="16dp"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@android:color/transparent"
+
+                        android:id="@+id/bachelorCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        app:cardElevation="0dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="16dp"
+                       >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="16dp"
+                            android:background="@drawable/card_border_blue"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/class11e"
+                                android:scaleType="centerCrop"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bachelor Programs"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="#1565C0"
+                                android:paddingStart="16dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <!-- Master Card -->
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/masterCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="8dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        android:clickable="true"
+                        android:focusable="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/card_border_blue">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/class11111111"
+                            android:contentDescription="Master Icon"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Master Programs"
+                            android:textSize="16sp"
+                            android:textColor="#1565C0"
+                            android:textStyle="bold"
+                            android:paddingStart="8dp"
+                            android:gravity="center_vertical"/>
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:id="@+id/tvFunctionTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Our College Functions"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Annual Day\n• Fresher Party\n• Farewell Program\n• Sports Week" />
+
+
+
+
+                <TextView
+                    android:id="@+id/tvOurResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Our Result"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:background="#000000"
+                    android:padding="8dp"
+                    android:layout_marginTop="24dp" />
+                </LinearLayout>
+
+
+            </ScrollView>
+
+            <!-- Footer -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E3F2FD"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact us:"
+                    android:textStyle="bold"
+                    android:textColor="#1565C0"/>
+
+                <TextView
+                    android:id="@+id/contactInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01-4311843 / 9851163618 / 9841292399 / WhatsApp / Viber: 9861830222"
+                    android:textColor="#0D47A1"/>
+
+                <TextView
+                    android:id="@+id/emailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email: info@ksc.edu.np"
+                    android:autoLink="email"
+                    android:textColor="#0D47A1"/>
+
+                <TextView
+                    android:id="@+id/websiteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Website: https://ksc.edu.np"
+                    android:autoLink="web"
+                    android:textColor="#0D47A1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/studentListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"/>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

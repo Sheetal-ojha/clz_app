@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ksc</string>
+
+
+    <string name="open">Open Navigation</string>
+    <string name="close">Close Navigation</string>
+
+    <string name="about_college_text">
+Kathmandu Shiksha Campus (KSC), affiliated with Tribhuvan University, is known for its quality education and calm learning environment. Located in the heart of Kathmandu, the campus offers programs in Management, Education, and Computer Applications. With experienced teachers and modern facilities, KSC helps students grow academically and personally in a peaceful setting.
+</string>
+
+
+</resources>

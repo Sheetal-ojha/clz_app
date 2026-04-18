@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Horizontal Layout -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Image (Photo) -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pri"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Text Section -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Satrugan Prasad Gupta"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <!-- Lecturer -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lecturer"
+                android:textSize="16sp"/>
+
+            <!-- Degree -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MSc in Computer Science"
+                android:textSize="14sp"/>
+
+            <!-- Achievements -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Published 10+ research papers"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Welcome to KSC! We are committed to lead the Campus for excellence in teaching, excellence in research, and excellence in service. Our faculty embrace this commitment because of their desire to serve our students and our world through learning and inquiry. This philosophy of service and inquiry drives all that we do, and we invite you to learn more about these opportunities.
+
+Graduation in Education opens unlimited opportunities to identify a job, start a leadership for change in educational norms, values and cultures as we are in the state of change.
+
+The purpose of KSC is to prepare professional educators who are academically and technically proficient, reflective in practice, committed to intellectual empowerment of others and guided by the federal democratic inclusive education system of Nepal. The involvement and commitment with which the students and faculty have worked over two decades have paid rich dividends and this has made KSC the most preferred one among the pioneering community educational institutions in the Nepal.
+
+Being a first community education Campus affiliated to TU, KSC is excellence in academic performances and have very good friendly environment enjoying its culture of participating decision making to impart quality education at affordable fees. We hope our new building with additional facilities help us to change the KSC into multiple Campus with additional of technical and vocational education in the community.
+
+Our KSC students have been consistently securing good ranks in the TU Examinations, which has reflected in the placement records as well. KSC is particularly conscious to produce responsible citizens by inculcating discipline and determination. The pride of KSC is its Alumnus who are well placed in different spheres from civil services to globally acclaimed companies. Our journey moves with the intention of maintaining the â€˜legacyâ€™ with proud goals.
+
+KSC currently offers Six Masters degree programs in education. We have what you are looking for; browse through our website. Get a feel for the outstanding academic opportunities our Campus provides through our five departments, our graduate school, our research, our academic departments, KSC Library, and major scholarships. If we can assist you in achieving your academic goals, I hope you will contact us, enroll and complete your degree at KSC."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sincerely,
+
+Shatrughan Prasad Gupta, M.Phil\n
+
+Campus Chief\n
+
+Kathmandu Shiksha Campus\n
+
+yespgupta@gmail.com\n
+
+01-4311843 /01-5916060"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
